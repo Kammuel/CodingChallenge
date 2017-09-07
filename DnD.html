@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dungeons and Dragons Character Sheet Creator</title>
+        <script type = "text/javascript" src = "dnd.js"></script>
+        Welcome to the Dungeons and Dragons Character Creator!
+        <br/>
+        <br/>
+        <link rel = "stylesheet" href = "style.css">
+        
+    </head>
+
+    <body>
+        
+        <span>Choose your race: </span><select onchange = "getRace()" id = "race">
+                <option selected = "">Please select</option>
+                <option value = "1">Human</option>
+				<option value = "2">Half-Orc</option>
+                <option value = "3">Elf</option>
+                <option value = "4">Dwarf</option>
+                <option value = "5">Halfling</option>
+                <option value = "6">Gnome</option>
+        <script type = "text/javascript">
+            alert("test");
+        
+        race.onchange
+            {
+                alert("test");
+            }
+        </script>
+        
+        </select><br/> <br/>
+        <span>Choose your class: </span><select name = "class" id = "class">
+            <option> </option>
+            <option value = "Barbarian">Barbarian</option>
+            <option value = "Ranger">Ranger</option>
+            <option value = "Fighter">Fighter</option>
+            <option value = "Wizard">Wizard</option>
+            <option value = "Cleric">Cleric</option>
+            <option value = "Rogue">Rogue</option>
+            <option value = "Bard">Bard</option>
+            <option value = "Druid">Druid</option>
+            <option value = "Monk">Monk</option>
+        </select>
+        <br/>
+        <br/>
+
+        <label for = "strength">Strength:</label>
+            <input type = "number" id = "strength" value = "0" min = "0" max = "99" class = "number"><br/>
+        <label for = "Charisma">Charisma:   </label>
+            <input type = "number" id = "Charisma" value = "0" min = "0" max = "99" class = "textbox"><br/>
+        <label for = "Fortitude">Fortitude:    </label>
+            <input type = "number" id = "Fortitude" value = "0" min = "0" max = "99" class = "textbox"><br/>
+        <label for = "Intelligence">Intelligence: </label>
+            <input type = "number" id = "Intelligence" value = "0" min = "0" max = "99" class = "textbox"><br/>
+        <label for = "Wisdom">Wisdom: </label>
+            <input type = "number" id = "Wisdom" value = "0" min = "0" max = "99" class = "textbox"><br/>
+        <label for = "Agility">Agility: </label>
+			<input type = "number" id = "Agility" value = "0" min = "0" max = "99" class = "textbox"><br/> 
+        
+    </body>
+    <footer>
+    </footer>
+</html>
