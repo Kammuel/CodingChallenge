@@ -1,41 +1,121 @@
-function $(element)
-{
-    var element = document.getElementById("element");
-    return element
-}
+$(document).ready(function(){
 
-
-function getRace()
-{
-    var race = document.getElementById("race").value;
-    alert(race);
-    var index = document.getElementById("race").selectedIndex;
-    alert(index);
     
-    /*var strength = 2;
-    $("strength").value = 2;
-    
-    -----THIS IS WHERE I AM TRYING TO RESET THE VALUE OF WHICHEVER ATTRIBUTE-----
+    $("#race").change(function(){
+        var index = $("#race option:selected").index();
+        
+        
+        if(index == 2)
+        {
+            
+            var num = +$("#strength").val() + 2;
+            $("#strength").val(num);
+            num = +$("#intelligence").val() - 2;
+            $("#intelligence").val(num);
+            num = +$("#charisma").val() -2;
+            $("#charisma").val(num);
+            changeLast(oldIndex);
+            var oldIndex = 2;
+            
+        }
 
-    */
+        if(index == 3)
+        {
+            
+            var num = +$("#wisdom").val() + 2;
+            $("#wisdom").val(num);
+            num = +$("#constitition").val() - 2;
+            $("#constitution").val(num);
+            changeLast(oldIndex);
+            var oldIndex = 3;
+            
+        }
 
-}
+        if(index == 4)
+        {
+            
+            var num = +$("#constitution").val() + 2;
+            $("#wisdom").val(num);
+            num = +$("#dexterity").val() - 2;
+            $("#dexterity").val(num);
+            changeLast(oldIndex);
+            var oldIndex = 4;
+            
+        }
 
-function getClass()
-{
-    var classType = document.getElementById("class").value;
-    alert(classType);
-}
+        if(index == 5)
+        {
+            var num = +$("#dexterity").val() + 2;
+            $("#dexterity").val(num);
+            num = +$("#strength").val() - 2;
+            $("#strength").val(num);
+            num = +$("#constitution").val() - 2;
+            $("#constitution").val(num);
+            changeLast(oldIndex);
+            var oldIndex = 5;
+            
+        }
 
-//This function was originally designed to decrease the amount of points
-//left available to add to your character.  I was trying to do an if/else 
-//to see if the new value was higher to then decrease the points.
-function points(id)
-{
-    var oldPoints = id.value;
-    alert(oldPoints);
-    var newPoints = id.value;
-    oldPoints = newPoints;
-    alert(newPoints);
-}
+        if(index == 6)
+        {
+            var num = +$("#dexterity").val() + 2;
+            $("#dexterity").val(num);
+            num = +$("#constitution").val() - 2;
+            $("#constitution").val(num);
+            changeLast(oldIndex);   
+            var oldIndex = 6;    
+                 
+        }
+
+        function changeLast(oldIndex)
+        {
+            if(oldIndex == 2)
+            {
+                var num = +$("#strength").val() - 2;
+                $("#strength").val(num);
+                num = +$("#intelligence").val() + 2;
+                $("#intelligence").val(num);
+                num = +$("#charisma").val() + 2;
+                $("#charisma").val(num);
+            }
+
+            if(oldIndex == 3)
+            {
+                var num = +$("#wisdom").val() - 2;
+                $("#wisdom").val(num);
+                num = +$("#constitition").val() + 2;
+                $("#constitution").val(num);
+            }
+
+            if(oldIndex == 4)
+            {
+                var num = +$("#constitution").val() - 2;
+                $("#wisdom").val(num);
+                num = +$("#dexterity").val() + 2;
+                $("#dexterity").val(num);;
+            }
+
+            if(oldIndex == 5)
+            {
+                var num = +$("#dexterity").val() - 2;
+                $("#dexterity").val(num);
+                num = +$("#strength").val() + 2;
+                $("#strength").val(num);
+                num = +$("#constitution").val() + 2;
+                $("#constitution").val(num);
+            }
+
+            if(oldIndex == 6)
+            {
+                var num = +$("#dexterity").val() - 2;
+                $("#dexterity").val(num);
+                num = +$("#constitution").val() + 2;
+                $("#constitution").val(num);
+            }
+
+        }
+
+    })
+
+})
 
