@@ -61,6 +61,7 @@ $(document).ready(function(){
         character.points=starting_points
         if(index == 1)
         {
+          character.race="Human"
           console.log(character)
           //update all stats to race specifics
           character.strength=starting_stat
@@ -77,6 +78,7 @@ $(document).ready(function(){
 
         if(index == 2)
         {
+          character.race="Half-Orc"
           //update all stats to race specifics
           character.strength=starting_stat+2
           character.charisma=starting_stat-2
@@ -100,6 +102,7 @@ $(document).ready(function(){
 
         if(index == 3)
         {
+          character.race="Elf"
           //update all stats to race specifics
           character.strength=starting_stat
           character.charisma=starting_stat
@@ -121,6 +124,7 @@ $(document).ready(function(){
 
         if(index == 4)
         {
+          character.race="Dwarf"
           //update all stats to race specifics
           character.strength=starting_stat
           character.charisma=starting_stat
@@ -142,6 +146,7 @@ $(document).ready(function(){
 
         if(index == 5)
         {
+          character.race="Halfling"
           //update all stats to race specifics
           character.strength=starting_stat-2
           character.charisma=starting_stat
@@ -164,6 +169,7 @@ $(document).ready(function(){
 
         if(index == 6)
         {
+          character.race="Gnome"
           //update all stats to race specifics
           character.strength=starting_stat
           character.charisma=starting_stat
