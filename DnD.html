@@ -4,17 +4,17 @@
         <title>Dungeons and Dragons Character Sheet Creator</title>
         <script type = "text/javascript" src = "jquery-3.2.1.min.js"></script>
         <script type = "text/javascript" src = "dnd.js"></script>
-        
-        
+
+
         Welcome to the Dungeons and Dragons Character Creator!
         <br/>
         <br/>
         <link rel = "stylesheet" href = "style.css">
-        
+
     </head>
 
     <body>
-        
+
         <span>Choose your race: </span><select id = "race">
                 <option>Please select</option>
                 <option value = "Human">Human</option>
@@ -24,8 +24,8 @@
                 <option value = "Halfling">Halfling</option>
                 <option value = "Gnome">Gnome</option>
 
-        
-        
+
+
         </select><br/> <br/>
         <span>Choose your class: </span><select onchange = "getClass()" name = "class" id = "class">
             <option> </option>
@@ -54,12 +54,12 @@
         <label for = "Wisdom">Wisdom: </label>
             <input type = "number" id = "wisdom" value = "0" min = "-2" max = "99" class = "textbox"><br/>
         <label for = "Dexterity">Dexterity: </label>
-            <input type = "number" id = "dexterity" value = "0" min = "-2" max = "99" class = "textbox"><br/> 
+            <input type = "number" id = "dexterity" value = "0" min = "-2" max = "99" class = "textbox"><br/>
 
-        <label for = "Points">Points: </label><span id = "pointsLeft"> 
+        <p>Points: </p><p type = "number" id = "points">0</p> 
         </h2>
-       
-        
+
+
     </body>
     <footer>
     </footer>
